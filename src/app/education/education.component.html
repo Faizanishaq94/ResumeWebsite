@@ -1,0 +1,47 @@
+<nav class="nav nav-pills nav-fill" style="margin-left:25%;margin-right:20%">
+  <button type="button" class="btn btn-outline-info" 
+  style="width:250px;margin-right:2px;" (click)="openTab(0)"
+  [ngClass]="{clicked : buttons[0] == true}">
+    George Mason University
+  </button>
+  <button type="button" class="btn btn-outline-info" 
+  style="width:250px;margin-right:2px;" (click)="openTab(1)"
+  [ngClass]="{clicked : buttons[1] == true}">
+      Thomas A. Edison HS
+  </button>
+</nav>
+
+<div class="jumbotron" *ngIf="buttons[0]"> 
+
+  <div class="tab">
+    <button class="tablinks" (click)="gmuTabClick(0)" [ngStyle]="{'background-color': getColor(0)}">General</button>
+    <button class="tablinks" (click)="gmuTabClick(1)" [ngStyle]="{'background-color': getColor(1)}">Related Courses</button>
+  </div>
+  
+  <div class="tabcontent" *ngIf="gmuTabs[0]">
+    <ul class="list-group list-group-flush" style="margin-top:5px;">
+        <li class="list-group-item">Attended : August 2015 - Present</li>
+        <li class="list-group-item">Senior with an Expected Graduation Date of December 2019</li>
+        <li class="list-group-item">Major : Information Technology with Database and Programming Concentration</li>
+        <li class="list-group-item">Minor : Computer Science</li>
+        <li class="list-group-item">Current GPA : 3.32</li>
+
+      </ul>
+  </div>
+  
+  <div class="tabcontent" *ngIf="gmuTabs[1]">
+    <h3>Paris</h3>
+    <p>Paris is the capital of France.</p>
+  </div>
+
+</div>
+
+<div class="jumbotron" *ngIf="buttons[1]">
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Cras justo odio</li>
+    <li class="list-group-item">Dapibus ac facilisis in</li>
+    <li class="list-group-item">Morbi leo risus</li>
+    <li class="list-group-item">Porta ac consectetur ac</li>
+    <li class="list-group-item">Current GPA : 3.33</li>
+  </ul>
+</div>

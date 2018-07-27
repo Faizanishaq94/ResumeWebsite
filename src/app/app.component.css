@@ -1,0 +1,25 @@
+.example-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgb(151, 71, 71);
+  }
+  
+.side {
+      background: yellow;
+  }
+
+  .navToggle {
+      color : white;
+  }
+
+  .all {
+      margin-left:15%; /* default is 5*/
+      margin-right:15%;
+  }
+
+  .header {
+      float: right;
+  }

@@ -1,0 +1,25 @@
+.photo {
+    border-style: solid;
+    border-width: thin;
+    width: 175px;
+    height:230px;
+    margin: auto; /* centers an element */
+    overflow:hidden;
+    border-radius:10px;
+}
+
+.photoContainer {
+    width: 20%;
+}
+
+.text {
+    width:77%;
+    float:right;
+    border-width:thin;
+    border-radius: 5px;
+}
+
+.button {
+    width: 20px;
+    height:20px;
+}
