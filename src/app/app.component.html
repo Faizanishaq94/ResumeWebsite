@@ -18,10 +18,11 @@
             </nav>
         </mat-sidenav>
     
-        <mat-sidenav-content>
-            <app-header (click)="sidenav.toggle()"></app-header><br>
+        <mat-sidenav-content style="background-color:white">
+            <app-header [nav]="nav" [ngStyle]="{'color': nav.toggle ? sidenav.toggle() : ''}">
+            </app-header><br>
             <div class="jumbotron" style="border-style:solid;border-width:thin;
-            border-color: rgb(66, 99, 99);display:inline-block;width:100%;">
+            border-color: rgb(66, 99, 99);display:inline-block;width:100%; margin-top:-1%;">
                 <router-outlet></router-outlet>
             </div>
             <app-footer></app-footer>

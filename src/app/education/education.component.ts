@@ -9,29 +9,25 @@ import { Component, OnInit } from '@angular/core';
 export class EducationComponent implements OnInit {
   buttons : boolean[] = [true,false];
   gmuTabs : boolean[] = [true,false];
+  otherTabs : boolean[] = [true,false];
   constructor() { }
 
   ngOnInit() {
   }
 
   openTab(num : number) {
-    if(num == 0) {
-      this.buttons[0] = true;
-      this.buttons[1] = false;
-      return;
-    }
-    this.buttons[0] = false;
-    this.buttons[1] = true;
+    this.buttons = [false,false];
+    this.buttons[num] = true;
   }
 
-  gmuTabClick(num : number) {
-    if(num == 0) {
-      this.gmuTabs[0] = true;
-      this.gmuTabs[1] = false;
+  tabClick(num : number, type : number) {
+    if(type == 1) {
+      this.gmuTabs = [false,false];
+      this.gmuTabs[num] = true;
       return;
-    }
-    this.gmuTabs[0] = false;
-    this.gmuTabs[1] = true;
+    } 
+    this.otherTabs = [false,false];
+    this.otherTabs[num] = true;
   }
 
   getColor(num : number) {

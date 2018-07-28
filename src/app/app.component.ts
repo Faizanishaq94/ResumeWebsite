@@ -9,7 +9,10 @@ import { Component, OnInit } from '@angular/core';
 export class AppComponent {
   options : string[] = ["About Me", "Experience", "Education", "My Skills", "Contact"];
   relations : string[] = ["/about-me", "/experience", "/education", "/my-skills", "/contact"];
-
+  nav = {
+    toggle : false
+  }
+ 
   getRoute(route : string) {
     let value : string = "/";
     for(let i of value.split(" ")) {
