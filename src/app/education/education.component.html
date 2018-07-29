@@ -2,12 +2,14 @@
   <nav class="nav nav-pills nav-fill" style="display:inline-block">
     <button type="button" class="btn btn-outline-info" 
     style="width:250px;margin-right:2px;" (click)="openTab(0)"
-    [ngClass]="{clicked : buttons[0] == true}">
+    [ngClass]="{clicked : buttons[0] == true}" data-toggle="tooltip" 
+    data-placement="top" title="Aug 2015 - Current">
       George Mason University
     </button>
     <button type="button" class="btn btn-outline-info" 
     style="width:250px;margin-right:2px;" (click)="openTab(1)"
-    [ngClass]="{clicked : buttons[1] == true}">
+    [ngClass]="{clicked : buttons[1] == true}" data-toggle="tooltip" 
+    data-placement="top" title="2015 & Before">
       Other
     </button>
   </nav>

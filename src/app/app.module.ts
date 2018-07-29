@@ -12,6 +12,8 @@ import { MySkillsComponent } from './my-skills/my-skills.component';
 import { ContactComponent } from './contact/contact.component';
 import { EducationComponent } from './education/education.component';
 import { FooterComponent } from './footer/footer.component';
+import { FormsModule } from '@angular/forms';
+import { NonMajorExpComponent } from './experience/non-major-exp/non-major-exp.component';
 
 
 @NgModule({
@@ -25,13 +27,16 @@ import { FooterComponent } from './footer/footer.component';
     ContactComponent,
     EducationComponent,
     FooterComponent,
+    NonMajorExpComponent
   ],
   imports: [
     BrowserModule,
     MatTabsModule,
     MatSidenavModule, 
     MatIconModule, 
-    BrowserAnimationsModule, AppRoutingModule,
+    BrowserAnimationsModule, 
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

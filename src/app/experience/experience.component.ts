@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./experience.component.css']
 })
 export class ExperienceComponent implements OnInit {
-
+  collapse : boolean[] = [true,false];
   constructor() { }
 
   ngOnInit() {
