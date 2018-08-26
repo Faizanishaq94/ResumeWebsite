@@ -7,7 +7,6 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   toggled : boolean;
-  @Input() nav : object;
   constructor() { }
 
   ngOnInit() {
