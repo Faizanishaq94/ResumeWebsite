@@ -6,7 +6,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SideNavButtonComponent } from './side-nav-button/side-nav-button.component';
 import { HeaderComponent } from './header/header.component';
 import { AboutMeComponent } from './about-me/about-me.component';
-import { AppRoutingModule } from './/app-routing.module';
 import { ExperienceComponent } from './experience/experience.component';
 import { MySkillsComponent } from './my-skills/my-skills.component';
 import { ContactComponent } from './contact/contact.component';
@@ -35,7 +34,6 @@ import { NonMajorExpComponent } from './experience/non-major-exp/non-major-exp.c
     MatSidenavModule, 
     MatIconModule, 
     BrowserAnimationsModule, 
-    AppRoutingModule,
     FormsModule,
     MatSliderModule
   ],

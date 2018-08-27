@@ -1,26 +1,52 @@
-.example-container {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgb(151, 71, 71);
-  }
-  
-.side {
-      background: yellow;
-  }
+.profilePicture {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top:5%;
+    border-radius:50%;
+    width:175px;
+    height:175px;
+    padding:2%;
+}
 
-  .navToggle {
-      color : white;
-  }
+.infoIcons {
+    margin-left:6%;
+    margin-right:3%;
+    font-size:16px;
+}
 
-  .all {
-      margin-left:15%; /* default is 5*/
-      margin-right:15%;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
+.photoLinks {
+    width: 30px;
+    height: 30px;
+    margin-right:3%;
+    border-radius:5px;
+    margin-bottom: 3%;
+}
 
-  .header {
-      float: right;
-  }
+.contactInfo {
+    font-size: 13px;
+}
+
+.backgroundIcons {
+    font-size: 22px;
+    margin-right:1.5%;
+    margin-top:1%
+}
+
+.headers {
+    font-size:18px;
+}
+
+.content {
+    font-size:13px;
+    margin-left:3%;
+}
+
+li {
+    margin-bottom:4px
+}
+
+#skills {
+    margin-right:1%;
+    margin-top:2px;
+}

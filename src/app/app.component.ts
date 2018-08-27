@@ -7,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  buttons = [true, false]; //new
+  relatedCourses : string[] = ["Intro Computer Programming [Python] ","Software Design [Java]","Object Oriented Programming [Java]",
+  "Program Design/Data Structures [Java]","Applied Programming [PHP]","Database Fundamentals [SQL]","Multimedia & Web Design [HTML/CSS]",
+  "System Analysis and Design","IT Architecture Fundamentals","Discrete Structures"];//new
   options : string[] = ["About Me", "Experience", "Education", "My Skills", "Contact"];
   relations : string[] = ["/about-me", "/experience", "/education", "/my-skills", "/contact"];
   nav = {
@@ -19,5 +23,10 @@ export class AppComponent {
       value += i.toLowerCase() + "-";
     }
     return value.substring(0, value.length - 1);
+  }
+
+  openTab(num : number) {
+    this.buttons = [false,false];
+    this.buttons[num] = true;
   }
 }
